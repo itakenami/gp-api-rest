@@ -1,0 +1,35 @@
+{"level":"info","message":"[Sat Mar 19 2016 19:56:13 GMT+0000 (UTC)] Executing (default): SELECT \"Analista\".\"id\", \"Analista\".\"nome\", \"Analista\".\"especialidade\", \"cargo\".\"id\" AS \"cargo.id\", \"cargo\".\"nome\" AS \"cargo.nome\" FROM \"analistas\" AS \"Analista\" LEFT OUTER JOIN \"cargos\" AS \"cargo\" ON \"Analista\".\"cargo_id\" = \"cargo\".\"id\";","timestamp":"2016-03-19T19:56:13.840Z"}
+{"level":"info","message":"::ffff:10.240.0.200 - - [19/Mar/2016:19:56:13 +0000] \"GET /analistas HTTP/1.1\" 200 448\n","timestamp":"2016-03-19T19:56:13.892Z"}
+{"level":"info","message":"[Sat Mar 19 2016 19:56:28 GMT+0000 (UTC)] Executing (default): SELECT \"id\", \"nome\", \"data_inicio\", \"data_fim\" FROM \"projetos\" AS \"Projeto\";","timestamp":"2016-03-19T19:56:28.052Z"}
+{"level":"info","message":"::ffff:10.240.0.113 - - [19/Mar/2016:19:56:28 +0000] \"GET /projetos HTTP/1.1\" 200 8302\n","timestamp":"2016-03-19T19:56:28.109Z"}
+{"level":"info","message":"[Sat Mar 19 2016 20:01:47 GMT+0000 (UTC)] Executing (default): SELECT \"id\", \"nome\", \"data_inicio\", \"data_fim\" FROM \"projetos\" AS \"Projeto\";","timestamp":"2016-03-19T20:01:47.999Z"}
+{"level":"info","message":"::ffff:10.240.0.200 - - [19/Mar/2016:20:01:48 +0000] \"GET /projetos HTTP/1.1\" 200 8302\n","timestamp":"2016-03-19T20:01:48.201Z"}
+{"level":"info","message":"[Sat Mar 19 2016 20:05:40 GMT+0000 (UTC)] Executing (default): SELECT \"id\", \"nome\", \"data_inicio\", \"data_fim\" FROM \"projetos\" AS \"Projeto\";","timestamp":"2016-03-19T20:05:40.658Z"}
+{"level":"info","message":"::ffff:10.240.0.157 - - [19/Mar/2016:20:05:40 +0000] \"GET /projetos HTTP/1.1\" 200 -\n","timestamp":"2016-03-19T20:05:40.859Z"}
+{"level":"info","message":"[Sat Mar 19 2016 20:05:56 GMT+0000 (UTC)] Executing (default): SELECT \"Analista\".\"id\", \"Analista\".\"nome\", \"Analista\".\"especialidade\", \"cargo\".\"id\" AS \"cargo.id\", \"cargo\".\"nome\" AS \"cargo.nome\" FROM \"analistas\" AS \"Analista\" LEFT OUTER JOIN \"cargos\" AS \"cargo\" ON \"Analista\".\"cargo_id\" = \"cargo\".\"id\";","timestamp":"2016-03-19T20:05:56.365Z"}
+{"level":"info","message":"::ffff:10.240.0.157 - - [19/Mar/2016:20:05:56 +0000] \"GET /analistas HTTP/1.1\" 200 448\n","timestamp":"2016-03-19T20:05:56.405Z"}
+{"level":"info","message":"[Sat Mar 19 2016 20:16:53 GMT+0000 (UTC)] Executing (default): SELECT \"Analista\".\"id\", \"Analista\".\"nome\", \"Analista\".\"especialidade\", \"cargo\".\"id\" AS \"cargo.id\", \"cargo\".\"nome\" AS \"cargo.nome\" FROM \"analistas\" AS \"Analista\" LEFT OUTER JOIN \"cargos\" AS \"cargo\" ON \"Analista\".\"cargo_id\" = \"cargo\".\"id\";","timestamp":"2016-03-19T20:16:53.789Z"}
+{"level":"info","message":"::ffff:10.240.0.186 - - [19/Mar/2016:20:16:53 +0000] \"GET /analistas HTTP/1.1\" 200 448\n","timestamp":"2016-03-19T20:16:53.836Z"}
+{"level":"info","message":"[Sat Mar 19 2016 22:41:26 GMT+0000 (UTC)] Executing (default): SELECT \"id\", \"nome\" FROM \"cargos\" AS \"Cargo\";","timestamp":"2016-03-19T22:41:26.936Z"}
+{"level":"info","message":"::ffff:10.240.0.138 - - [19/Mar/2016:22:41:26 +0000] \"GET /cargos HTTP/1.1\" 200 263\n","timestamp":"2016-03-19T22:41:26.977Z"}
+{"level":"info","message":"[Sun Mar 20 2016 01:13:19 GMT+0000 (UTC)] Executing (default): SELECT \"id\", \"nome\" FROM \"cargos\" AS \"Cargo\";","timestamp":"2016-03-20T01:13:19.973Z"}
+{"level":"info","message":"::ffff:10.240.0.165 - - [20/Mar/2016:01:13:20 +0000] \"GET /cargos HTTP/1.1\" 200 263\n","timestamp":"2016-03-20T01:13:20.020Z"}
+{"level":"info","message":"::ffff:10.240.0.200 - - [20/Mar/2016:01:23:55 +0000] \"GET /cargos HTTP/1.1\" 200 263\n","timestamp":"2016-03-20T01:23:55.858Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"GET / HTTP/1.1\" 200 99\n","timestamp":"2016-08-25T19:11:56.032Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2016-08-25T19:11:56.060Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2016-08-25T19:11:56.117Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2016-08-25T19:11:56.124Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2016-08-25T19:11:56.137Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /cargos HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.153Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /cargos HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.159Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"GET /cargos/1 HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.165Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"PUT /cargos/1 HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.169Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"DELETE /cargos/1 HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.175Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"GET /cargos HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.184Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /token HTTP/1.1\" 401 12\n","timestamp":"2016-08-25T19:11:56.189Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /analistas HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.199Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"POST /analistas HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.205Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"GET /analistas/1 HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.209Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"PUT /analistas/1 HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.217Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"DELETE /analistas/1 HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.224Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2016:19:11:56 +0000] \"GET /analistas HTTP/1.1\" 401 -\n","timestamp":"2016-08-25T19:11:56.229Z"}
