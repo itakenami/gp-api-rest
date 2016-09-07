@@ -7,7 +7,7 @@ describe("Routes: Analistas", () => {
         
     it("Obtendo token válido", done => { 
         request.post("/token") 
-            .send({"token":"vai123"}) 
+            .send({"chave":"vai123"}) 
             .expect(200) 
             .end((err, res) => { 
                 expect(res.body).to.include.keys("token"); 
@@ -33,7 +33,7 @@ describe("Routes: Analistas", () => {
                         
                     }
                 ) 
-                .expect(200) 
+                .expect(201) 
                 .end((err, res) => { 
                     expect(res.body.nome).to.eql(registro1); 
                     done(err); 
@@ -51,7 +51,7 @@ describe("Routes: Analistas", () => {
                         
                     }
                 ) 
-                .expect(200) 
+                .expect(201) 
                 .end((err, res) => { 
                     expect(res.body.nome).to.eql(registro2); 
                     done(err); 

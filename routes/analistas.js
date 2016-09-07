@@ -2,7 +2,7 @@ module.exports = app => {
     
     const Analista = app.db.models.Analista; 
     
-    app.route("/analistas/:especialidade") 
+    app.route("/analistas/especialidade/:especialidade") 
         .all(app.auth.authenticate())
         /** 
         * @api {get} /analistas/:especialidade Listar Especialistas

@@ -5,10 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "start-prod": "NODE_ENV=prod babel-node index.js",
+    "start-prod": "npm run start-prod-win",
+    "start-prod-unix": "NODE_ENV=prod babel-node index.js",
+    "start-prod-win": "set NODE_ENV=prod&&babel-node index.js",
     "clusters": "babel-node clusters.js",
-    "test": "NODE_ENV=test mocha test/routes/index.js test/routes/cargos.js test/routes/analistas.js",
-    "pretest": "NODE_ENV=test babel-node test/pretest.js",
+    "test": "npm run test-win",
+    "pretest": "npm run pretest-win",
+    "test-unix": "NODE_ENV=test mocha test/routes/index.js test/routes/cargos.js test/routes/analistas.js",
+    "pretest-unix": "NODE_ENV=test babel-node test/pretest.js",
+    "test-win": "set NODE_ENV=test&&mocha test/routes/index.js test/routes/cargos.js test/routes/analistas.js",
+    "pretest-win": "set NODE_ENV=test&&babel-node test/pretest.js",
+    
     "apidoc": "apidoc -i routes/ -o public/apidoc"
   },
   "author": "Igor Takenami",

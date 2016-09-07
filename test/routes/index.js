@@ -38,7 +38,7 @@ describe("Routes: Index", () => {
         
         it("Enviando senha errada ", done => { 
             request.post("/token") 
-                .send({"token":"errada"}) 
+                .send({"chave":"errada"}) 
                 .expect(401)
                 .end((err, res) => { 
                     done(err); 
@@ -47,7 +47,7 @@ describe("Routes: Index", () => {
         
         it("Retornou token autenticado", done => { 
             request.post("/token") 
-                .send({"token":"vai123"}) 
+                .send({"chave":"vai123"}) 
                 .expect(200) 
                 .end((err, res) => { 
                     expect(res.body).to.include.keys("token"); 
